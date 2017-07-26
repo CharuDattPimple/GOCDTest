@@ -1,0 +1,32 @@
+{
+  "name": "webportal",
+  "version": "1.0.0",
+  "description": "This application is just GOCD Test code",
+  "main": "wdio.conf.js",
+  "scripts": {
+    "pretest": "npm i",
+    "test": "wdio wdio.conf.js",
+    "posttest": "allure generate -c -o allure-report allure-results",
+    "open": "allure open allure-report",
+    "clean": "rm -rf allure-report allure-results errorShots"
+  },
+  "keywords": [
+    "webdriverio",
+    "mocha",
+    "chai"
+  ],
+  "author": "Charudatt Pimple",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "allure-commandline": "^2.0.1",
+    "chai": "^3.5.0",
+    "fibers": "^2.0.0",
+    "mocha": "^3.4.1",
+    "wdio-allure-reporter": "^0.1.2",
+    "wdio-chromedriver-service": "0.0.1",
+    "wdio-junit-reporter": "^0.3.0",
+    "wdio-mocha-framework": "^0.5.10",
+    "wdio-spec-reporter": "^0.1.0",
+    "webdriverio": "^4.8.0"
+  }
+}
