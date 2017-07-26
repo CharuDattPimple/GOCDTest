@@ -1,4 +1,4 @@
-// login.spec.js
+
 var expect = require('chai').expect;
 describe('Verify the Git hub page title', function () {
     it('should display page title', function () {
